@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Quotator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav class="navbar justify-content-between">
+
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" class="d-inline-block align-top">
+                Quotator
+            </a>
+            <span class="created-by">Created by Dennis Vinther Jensen</span>
+
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid">
+
+            <div class="container">
+
+                <h1 class="display-3">Welcome to the Quotator</h1>
+                <p class="lead">Select an amount and a type of quotes, hit Generate Quotes and start reading.</p>
+
+                <form class="form">
+
+                    <div class="form-group row">
+                        <label class="col-sm-12 col-form-label" for="quoteAmount">How many quotes do you want?</label>
+                        <div class="col-sm-12">
+                            <select class="form-control" id="quoteAmount">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-12 col-form-label" for="quoteType">Which source should they be generated from?</label>
+                        <div class="col-sm-12">
+                            <select class="form-control" id="quoteSource">
+                                <option value="computerscience">Computer Science</option>
+                                <option value="forbes">Forbes</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        
+                        <div class="col no-label">
+
+                           <div class="btn-group" data-toggle="buttons">
+
+                                <label class="btn btn-secondary">
+                                    <span class="btn-check"></span>
+                                    <input type="checkbox" id="autoUpdate" >Auto update
+                                </label>
+
+                                <label class="btn btn-secondary">
+                                    <span class="btn-check"></span>
+                                    <input type="checkbox" id="reverse" > Reverse
+                                </label>
+
+                                <label class="btn btn-secondary">
+                                    <span class="btn-check"></span>
+                                    <input type="checkbox" id="shuffle" > Shuffle
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col no-label">
+                            <button type="button" class="btn btn-secondary btn-block" id="generateQuotes" disabled="disabled">Generate Quotes</button>
+                        </div>
+                    </div>
+
+                    
+
+                </form>
+                
+            </div>
+
+        </div>
+
+        <div id="content" class="container" style="padding: 0;">
+            
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <div id="quotes"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="vendor/js/popper.min.js"></script>
+        <script src="vendor/js/jquery-3.2.1.min.js"></script>
+        <script src="vendor/js/bootstrap.min.js"></script>
+        <script src="quotator.js"></script>
+    </body>
+</html>

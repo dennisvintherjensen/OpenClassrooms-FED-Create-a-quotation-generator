@@ -1,0 +1,156 @@
+/* -----------------------------------
+    MISC
+------------------------------------*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #444;
+    background-color: #fff;
+}
+
+/* -----------------------------------
+    NAVBAR
+------------------------------------*/
+.navbar-brand {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+    .navbar-brand img {
+        height: 30px;
+        width: auto;
+    }
+
+.navbar {
+    background: #546e7a;
+}
+
+.created-by {
+    font-style: italic;
+    color: #fff;
+}
+/* -----------------------------------
+    JUMBOTRON
+------------------------------------*/
+.jumbotron .lead {
+    margin-bottom: 40px;
+}
+
+/* -----------------------------------
+    BUTTONS
+------------------------------------*/
+
+/* -----------------------------------
+    TYPOGRAPHY
+------------------------------------*/
+.page-header {
+    font-weight: normal;
+    font-size: 25px;
+}
+/* -----------------------------------
+    LAYOUT & STYLES
+------------------------------------*/
+.col.no-label{
+    margin-top: 18px;
+    text-align: right;
+}
+
+#quotes{
+    margin-top: 40px;
+}
+
+blockquote {
+    color: #546e7a;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 15px;
+    position: relative;
+    border: 1px solid #546e7a;
+    border-radius: 4px;
+}
+
+blockquote::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border: 1px solid #546e7a;
+    border-top: none;
+    border-left: none;
+    position: absolute;
+    bottom: -11px;
+    left: 50px;
+    transform: rotate(45deg);
+}
+/* -----------------------------------
+    BF OVERRIDES
+------------------------------------*/
+.row {
+    margin-bottom: 10px;
+}
+
+.custom-control-indicator {
+    background: #fff;
+}
+
+.custom-control-input:checked~.custom-control-indicator {
+    background: #fff;
+    color: #fff;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn .btn-check {
+    display: block;
+    height: 16px;
+    width: 16px;
+    padding-right: 10px;
+    box-sizing: content-box;
+}
+
+.btn .btn-check::after {
+    content: "";
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23666' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.btn.active .btn-check::after {
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+
+.btn-group {
+    display: flex;
+}
+
+.btn-group .btn {
+    flex: 1;
+    border-left: 1px solid #ddd;
+}
+
+.btn-light.focus, .btn-light:focus {
+    box-shadow: none;
+}
+
+/* -----------------------------------
+    MEDIA
+------------------------------------*/
+@media (max-width: 768px) { 
+    
+    .jumbotron .display-3 {
+        font-size: 35px;
+    }
+
+    .jumbotron .lead {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+ }
+@media (min-width: 992px) {  }
+@media (min-width: 1200px) {  }
